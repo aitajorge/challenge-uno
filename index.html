@@ -3,10 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <title>Document</title>
+  <title>Encriptador</title>
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">  
 </head>
 <body>
+  <div class="container">
+    <h1>Encriptador de mensajes</h1>
+    <form id="formulario">
+      <input type="text" id="texto" placeholder="Introduce el texto" required>
+      <div class="opciones">
+        <input type="radio" id="encriptar" name="opcion" value="encriptar" checked>
+        <label for="encriptar">Encriptar</label>
+        <input type="radio" id="decryptar" name="opcion" value="decryptar">
+        <label for="decryptar">Decryptar</label>
+      </div>
+      <button type="submit">Ejecutar</button>
+      <div class="resultado" id="resultado"></div>
+      <button id="copiar">Copiar</button>      
+    </form>
+  </div>  
   
+  <script src="app.js"></script>
+
 </body>
 </html>

@@ -5,3 +5,54 @@
   left: -2277px;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1{
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"]{
+  width: 80%;
+  height: 30px;
+  border: 1px solid #333;
+  margin: 10px;
+}
+
+button{
+  width: 80%;
+  height: 40px;
+  border: none;
+  background-color: #333;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.resultado{
+  width: 80%;
+  height: 100px;
+  border: 1px solid #333;
+  margin: 10px;
+  padding: 10px;
+  overflow: auto;
+}
